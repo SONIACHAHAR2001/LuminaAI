@@ -1,0 +1,99 @@
+:root {
+    --primary: #86efac;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(7, 7, 7, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 2px solid #1f1f1f;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 650;
+    color: var(--primary);
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 550;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #FFFBB1;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 2px solid #555;
+    color: white;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: black;
+}
+
+.btn-primary:hover {
+    background: #FFFBB1;
+    transform: translateY(-2px);
+}
+
