@@ -1,5 +1,5 @@
 :root {
-    --primary: #86efac;
+    --primary: #6495ED;
 }
 
 * {
@@ -26,10 +26,10 @@ body {
 nav {
     position: sticky;
     top: 0;
-    background-color: rgba(7, 7, 7, 0.95);
+    background-color: #0D1A1D;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 2px solid #1f1f1f;
+    border-bottom: 1px solid white;
 }
 
 .nav-content {
@@ -57,7 +57,7 @@ nav {
 }
 
 .nav-links a {
-    color: #ccc;
+    color: white;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 550;
@@ -65,7 +65,7 @@ nav {
 }
 
 .nav-links a:hover{
-    color: #FFFBB1;
+    color: #88A6A9;
 }
 
 .nav-buttons{
@@ -76,24 +76,108 @@ nav {
 .btn{
     padding: 10px 20px;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;
 }
 
 .btn-outline {
-    border: 2px solid #555;
+    border: 2px solid white;
     color: white;
 }
 
 .btn-primary {
     background: var(--primary);
     color: black;
+    
 }
 
 .btn-primary:hover {
-    background: #FFFBB1;
+    background: #88A6A9;
     transform: translateY(-2px);
+}
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background-image: url('./assets/bg1.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 5.3rem;
+    line-height: 1.2;
+    font-weight: 650;
+    margin-bottom: 25px;
+    color: white;
+}
+
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+/* Features */
+
+.section {
+    padding: 60px 50px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #363738;
+    height: 220px;
+    width: 450px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: black;
+    transition: 0.4s;
+    display: flex;
+
+    
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid white;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: black;
+    line-height: 1.4rem;
+
+}
+
+.feature-card img {
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
