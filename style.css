@@ -181,3 +181,34 @@ nav {
     border: 1px solid white;
 }
 
+/* Testimonials */
+
+.testimonials-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.testimonial-card {
+    height: 380px;
+    width: 350px;
+    background-color: #363738;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.author img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
