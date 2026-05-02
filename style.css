@@ -212,3 +212,11 @@ nav {
     width: 100px;
     border-radius: 50%;
 }
+
+/* final-cta */
+
+.final-cta {
+    background-color: #0D1A1D;
+    padding: 100px 20px;
+    text-align: center;
+}
